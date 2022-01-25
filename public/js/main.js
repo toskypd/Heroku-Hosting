@@ -15,7 +15,7 @@ const getInfo = async(event) => {
      datahide.classList.add('data_hide');
    }else{
        try{
-    let url= `https://yacdn.org/proxy/http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=376113179c09db520d87c8fae2351868`
+    let url= `https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=376113179c09db520d87c8fae2351868`
     const response= await fetch(url);
     const data= await response.json();
     const arrData= [data];
