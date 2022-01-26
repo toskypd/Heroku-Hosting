@@ -15,7 +15,7 @@ const getInfo = async(event) => {
      datahide.classList.add('data_hide');
    }else{
        try{
-    let url= `https://cors-anywhere.herokuapp.com//http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=376113179c09db520d87c8fae2351868`
+    let url= `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=376113179c09db520d87c8fae2351868`
     const response= await fetch(url);
     const data= await response.json();
     const arrData= [data];
@@ -47,7 +47,7 @@ const getInfo = async(event) => {
     datahide.classList.remove('data_hide');
 
 }catch{
-      city_name.innerText= `This is a cors error, ${"https://cors-anywhere.herokuapp.com/corsdemo"} `;
+      city_name.innerText= `open this link and allow access"https://cors-anywhere.herokuapp.com/corsdemo" `;
       datahide.classList.add('data_hide');
    }
 }
