@@ -208,20 +208,13 @@ body{
 }
 
 
-.main_layer {
+.main_layer #city_name{
     padding: 2rem 0;
    color: rgb(6, 21, 29);
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     
-}
-#city_name{
-    padding: 2rem 0;
-    color: rgb(117, 35, 21);
-     font-weight: 400;
-     font-size: 1.2rem;
-     text-align: center;
 }
 
 .main_layer .middle_layer{
