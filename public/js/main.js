@@ -47,7 +47,7 @@ const getInfo = async(event) => {
     datahide.classList.remove('data_hide');
 
 }catch{
-      city_name.innerText= `This is a cors error, to get the result click on this link & allow temporary access-- https://cors-anywhere.herokuapp.com/corsdemo `;
+      city_name.innerText= `This is a cors error, ${<button href="cors-anywhere.herokuapp.com/corsdemo">click here and allow </button>} `;
       datahide.classList.add('data_hide');
    }
 }
